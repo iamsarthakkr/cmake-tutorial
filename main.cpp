@@ -1,6 +1,8 @@
 #include<iostream>
 
+#include "Foo.hpp"
+
 int32_t main() {
-   std::cout << "Hello world!" << std::endl;
+   Foo::print();
 }
 

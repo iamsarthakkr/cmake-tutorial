@@ -10,3 +10,6 @@ project(CMAKE_TUTORIAL VERSION 1.0)
 
 # specify name of the executible file and the main cpp file
 add_executable(out main.cpp)
+
+# To include header file directory to the executible
+target_include_directories(out PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
