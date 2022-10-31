@@ -1,0 +1,2 @@
+Makefile command (will run makefile): make
+ 
