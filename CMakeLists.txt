@@ -8,8 +8,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # specify name of the project. Can be accessed using ${PROJECT_NAME}
 project(CMAKE_TUTORIAL VERSION 1.0)
 
-# specify name of the executible file and the main cpp file
-add_executable(out main.cpp)
+# specify name of the executible file and the source files (traditional way)
+add_executable(out main.cpp src/Foo.cpp)
 
 # To include header file directory to the executible
 target_include_directories(out PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
