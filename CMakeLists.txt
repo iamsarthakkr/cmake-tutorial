@@ -18,9 +18,8 @@ add_executable(out main.cpp ${SOURCES})
 # To include header file directory to the executible
 target_include_directories(out PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
-# adding custom library (src and headers) to our executible
-add_library(Adder STATIC Adder/add.cpp)
-target_include_directories(Adder PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/Adder/include)
+# Adding sub-directory (library)
+add_subdirectory(Adder)
 
-# linking our library to our executible
+# linking Adder library to our executible
 target_link_libraries(out PUBLIC Adder)
