@@ -5,5 +5,4 @@
 # Define variables
 ROOT_DIR=$(pwd)
 BUILD_DIRECTORY=$ROOT_DIR/out/build
-
 rm -rf $BUILD_DIRECTORY/*
